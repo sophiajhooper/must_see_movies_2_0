@@ -15,6 +15,10 @@ class Movie < ApplicationRecord
 
   # Indirect associations
 
+  has_many   :bookmarkers,
+             :through => :bookmarks,
+             :source => :bookmarker
+
   # Validations
 
   validates :director_id, :presence => true
