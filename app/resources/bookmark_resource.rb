@@ -8,6 +8,9 @@ class BookmarkResource < ApplicationResource
 
   # Direct associations
 
+  belongs_to :bookmarker,
+             resource: UserResource
+
   belongs_to :movie
 
   # Indirect associations
