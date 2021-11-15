@@ -1,6 +1,9 @@
 class Review < ApplicationRecord
   # Direct associations
 
+  belongs_to :reviewer,
+             :class_name => "User"
+
   belongs_to :movie
 
   # Indirect associations
