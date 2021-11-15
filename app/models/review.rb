@@ -2,7 +2,7 @@ class Review < ApplicationRecord
   # Direct associations
 
   belongs_to :reviewer,
-             :class_name => "User"
+             class_name: "User"
 
   belongs_to :movie
 
@@ -15,5 +15,4 @@ class Review < ApplicationRecord
   def to_s
     reviewer.to_s
   end
-
 end
