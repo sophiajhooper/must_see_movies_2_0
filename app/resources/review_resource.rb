@@ -9,6 +9,9 @@ class ReviewResource < ApplicationResource
 
   # Direct associations
 
+  belongs_to :reviewer,
+             resource: UserResource
+
   belongs_to :movie
 
   # Indirect associations
