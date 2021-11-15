@@ -4,6 +4,8 @@ RSpec.describe Bookmark, type: :model do
   
     describe "Direct Associations" do
 
+    it { should belong_to(:bookmarker) }
+
     it { should belong_to(:movie) }
 
     end
