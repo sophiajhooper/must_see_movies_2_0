@@ -16,4 +16,7 @@ class UserResource < ApplicationResource
 
   # Indirect associations
 
+  many_to_many :movie_bookmarks,
+               resource: MovieResource
+
 end
